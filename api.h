@@ -4,7 +4,7 @@ extern "C" {
     #endif
     void sayHelloWorld(const char *s);
     void sayWhat(const char *s);
-    char* foo(char* input);
+   const  char* foo(const char* input);
     #ifdef  __cplusplus
 }
 #endif

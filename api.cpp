@@ -11,7 +11,7 @@ void sayWhat(const char *s){
     ts.sayWhat(s);
     
 }
-char* foo(char* input){
+const char* foo(const char* input){
     Test ts;
     return ts.foo(input);
 }

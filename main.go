@@ -8,7 +8,6 @@ package main
 import "C"
 import (
 	"fmt"
-	"unsafe"
 )
 
 func main() {
@@ -18,8 +17,8 @@ func main() {
 	cs := C.CString("hello")
 	result := C.foo(cs)
 	str := C.GoString(result)
-	C.free(unsafe.Pointer(cs))
-	C.free(unsafe.Pointer(result))
+	//C.free(unsafe.Pointer(cs))
+	//C.free(unsafe.Pointer(result))
 	fmt.Println(str)
 
 }

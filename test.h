@@ -6,6 +6,6 @@ class Test{
     public: 
     void sayHello(const char *s);
     void sayWhat(const char *s);
-    char* foo(char* input);
+    const char* foo(const char* input);
 };
 #endif
